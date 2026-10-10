@@ -1,0 +1,22 @@
+export const site = {
+  name: "Bade Adesemowo",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://web.badesemowo.com",
+  tagline: "Technology leader, Fractional CTO and scale-up advisor.",
+  phone: "+234 809 889 9883",
+  phoneHref: "tel:+2348098899883",
+  emails: ["b.adesemowo@gmail.com", "infor@consulte.co"],
+  locations: "Lagos, Nigeria | United Kingdom",
+  address: "849 Diamond Str, 07th Floor, NY 10012, New York, United States",
+  offices: "Lagos NG | Atlanta GA | Chicago IL | London UK",
+  hours: "Mon to Sat, 8:00 to 17:00",
+  hoursNote: "Sunday closed",
+  calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL ?? "",
+  nav: [
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Expertise", href: "/expertise" },
+    { label: "Blog", href: "/blog" },
+    { label: "Contact", href: "/contact" },
+  ],
+  trustedBy: ["MIT", "Gartner", "Alibaba Foundation", "Tech Nation", "World Bank"],
+};

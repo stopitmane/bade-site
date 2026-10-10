@@ -1,26 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ink: #0e1a33;
+  --mute: #4f5a6e;
+  --line: #dde3ee;
+  --soft: #f2f4f8;
+  --brand: #1b3a78;
+  --sky: #2b78bd;
+  --deep: #0e2149;
 }
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ink: var(--ink);
+  --color-mute: var(--mute);
+  --color-line: var(--line);
+  --color-soft: var(--soft);
+  --color-brand: var(--brand);
+  --color-sky: var(--sky);
+  --color-deep: var(--deep);
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body { background: #fff; color: var(--ink); font-family: var(--font-sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 3px solid var(--sky); outline-offset: 3px; }
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }

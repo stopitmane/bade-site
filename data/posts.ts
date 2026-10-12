@@ -1,19 +1,17 @@
 export type Post = {
   slug: string;
   title: string;
-  date: string;
   categories: string[];
   image: string;
   imageAlt: string;
   paragraphs: string[];
 };
 
-// Source: "Bade Adesemowo website Content" doc, Blog tab. All five articles carry the doc's June 2, 2025 date.
+// Source: "Bade Adesemowo website Content" doc, Blog tab. Dates are intentionally omitted (client request).
 export const posts: Post[] = [
   {
     "slug": "firm-launches-app-to-simplify-global-relocation-visa",
     "title": "Firm launches app to simplify global relocation, visa process for Nigerian tech talents",
-    "date": "2025-06-02",
     "categories": [
       "Visa"
     ],
@@ -34,7 +32,6 @@ export const posts: Post[] = [
   {
     "slug": "expert-reveals-visa-options-for-nigerian-tech-talents",
     "title": "Expert reveals visa options for Nigerian tech talents",
-    "date": "2025-06-02",
     "categories": [
       "Blog",
       "Visa"
@@ -58,7 +55,6 @@ export const posts: Post[] = [
   {
     "slug": "nigeria-should-be-ready-for-ai-or-lose-out-big-time",
     "title": "Nigeria should be ready for AI or lose out big time – Adesemowo, Co-founder, Social Lender",
-    "date": "2025-06-02",
     "categories": [
       "Best Use Of AI"
     ],
@@ -80,7 +76,6 @@ export const posts: Post[] = [
   {
     "slug": "platform-explains-relocation-pathways-for-tech-talents",
     "title": "Platform explains relocation pathways for tech talents, newbies",
-    "date": "2025-06-02",
     "categories": [
       "Blog",
       "Visa"
@@ -105,7 +100,6 @@ export const posts: Post[] = [
   {
     "slug": "firm-launches-initiative-to-boost-tech-career",
     "title": "Firm launches initiative to boost tech career",
-    "date": "2025-06-02",
     "categories": [
       "Blog"
     ],

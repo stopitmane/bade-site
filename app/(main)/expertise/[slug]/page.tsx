@@ -91,7 +91,7 @@ export default async function ServicePage({ params }: Props) {
         <div className="mt-8"><Button href="/expertise" variant="ghostDark">View all services</Button></div>
       </Section>
 
-      <CtaBand title={`Talk to Bade about ${s.title}`} text="Book a free 30-minute consultation to explore how this can work for your business." />
+      <CtaBand title={`Talk to Bade about ${s.title}`} text="Book a free 20-minute consultation to explore how this can work for your business." />
     </>
   );
 }

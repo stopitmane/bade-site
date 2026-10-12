@@ -6,12 +6,22 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Book a Free Consultation | Bade Adesemowo",
-  description: "Schedule a free 30-minute consultation with Bade Adesemowo to explore how Fractional CTO leadership or AI consulting can transform your technology strategy.",
+  description: "Schedule a free 20-minute consultation with Bade Adesemowo to explore how Fractional CTO leadership or AI consulting can transform your technology strategy.",
   alternates: { canonical: "/free-consultation" },
 };
 
+function calendlyEmbed(url: string): string {
+  const u = new URL(url);
+  u.searchParams.delete("month");
+  u.searchParams.set("embed_type", "Inline");
+  u.searchParams.set("embed_domain", new URL(site.url).hostname);
+  u.searchParams.set("hide_gdpr_banner", "1");
+  u.searchParams.set("primary_color", "2b78bd");
+  return u.toString();
+}
+
 const expect = [
-  { t: "30-minute session", d: "A focused conversation about your goals." },
+  { t: "20-minute session", d: "A focused conversation about your goals." },
   { t: "Actionable insights", d: "Leave with clear next steps." },
   { t: "No obligation", d: "A free call with no strings attached." },
 ];
@@ -29,7 +39,12 @@ export default function FreeConsultation() {
         <Eyebrow>Booking</Eyebrow>
         <h2 className={`${h2} mb-8`}>Select a Time That Works for You</h2>
         {site.calendlyUrl ? (
-          <iframe title="Book a free consultation" src={site.calendlyUrl} loading="lazy" className="h-[720px] w-full rounded-[22px] border border-line" />
+          <>
+            <iframe title="Book a free consultation" src={calendlyEmbed(site.calendlyUrl)} loading="lazy" className="h-[720px] w-full rounded-[22px] border border-line" />
+            <p className="mt-4 text-center text-[15px] text-mute">
+              Calendar not loading? <a href={site.calendlyUrl} target="_blank" rel="noopener noreferrer" className="font-bold text-sky hover:underline">Open the booking page</a> or call <a href={site.phoneHref} className="font-bold text-sky hover:underline">{site.phone}</a>.
+            </p>
+          </>
         ) : (
           <div className="rounded-[22px] border border-dashed border-sky bg-soft p-8 text-center">
             <p className="mb-4 text-lg font-semibold">Online booking opens soon.</p>

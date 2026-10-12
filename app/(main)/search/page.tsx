@@ -16,7 +16,7 @@ const pages: Hit[] = [
   { title: "Expertise", href: "/expertise", kind: "Page", text: "Services AI machine learning technology strategy product innovation" },
   { title: "Blog & Press", href: "/blog", kind: "Page", text: "Insights on AI technology leadership global tech talent mobility" },
   { title: "Contact", href: "/contact", kind: "Page", text: "Contact form phone email offices Lagos London" },
-  { title: "Book a free consultation", href: "/free-consultation", kind: "Page", text: "Free 30-minute consultation Calendly booking" },
+  { title: "Book a free consultation", href: "/free-consultation", kind: "Page", text: "Free 20-minute consultation Calendly booking" },
   { title: "Invite Bade to speak", href: "/invite-to-speak", kind: "Page", text: "Keynote speaker conferences webinars corporate events" },
 ];
 

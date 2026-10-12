@@ -10,7 +10,7 @@ export const site = {
   offices: "Lagos NG | Atlanta GA | Chicago IL | London UK",
   hours: "Mon to Sat, 8:00 to 17:00",
   hoursNote: "Sunday closed",
-  calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL ?? "",
+  calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/badesemowo/20mins_freeconsulting",
   nav: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },

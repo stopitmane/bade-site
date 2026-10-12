@@ -3,8 +3,8 @@
 export async function sendMail(subject: string, lines: [string, string][], replyTo?: string): Promise<boolean> {
   const text = lines.map(([k, v]) => `${k}: ${v || "-"}`).join("\n");
   const key = process.env.RESEND_API_KEY;
-  const to = process.env.CONTACT_TO_EMAIL;
-  if (!key || !to) {
+  const to = process.env.CONTACT_TO_EMAIL ?? "b.adesemowo@gmail.com";
+  if (!key) {
     console.log(`[form] ${subject}\n${text}`);
     return true;
   }

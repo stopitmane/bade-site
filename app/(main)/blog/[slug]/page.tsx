@@ -7,7 +7,7 @@ import PostCard from "@/components/PostCard";
 import { Section, wrap, h2 } from "@/components/ui";
 import { posts } from "@/data/posts";
 import { site } from "@/data/site";
-import { excerpt, formatDate } from "@/lib/format";
+import { excerpt } from "@/lib/format";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -31,7 +31,6 @@ export default async function PostPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: p.title,
-    datePublished: p.date,
     image: `${site.url}/images/card-${p.image}.webp`,
     author: { "@type": "Person", name: site.name },
     mainEntityOfPage: `${site.url}/blog/${p.slug}`,
@@ -44,7 +43,7 @@ export default async function PostPage({ params }: Props) {
           <div className={`${wrap} max-w-4xl py-12 md:py-16`}>
             <Link href="/blog" className="mb-6 inline-block text-sm font-bold text-[#8cc4f2] hover:text-white">← Back to blog</Link>
             <h1 className="mb-4 text-[clamp(28px,4.4vw,48px)] font-extrabold leading-tight tracking-tight">{p.title}</h1>
-            <p className="text-[#c6d2e6]">{formatDate(p.date)} | {p.categories.join(", ")}</p>
+            <p className="text-[#c6d2e6]">{p.categories.join(", ")}</p>
           </div>
         </header>
         <div className={`${wrap} max-w-3xl py-10 md:py-14`}>

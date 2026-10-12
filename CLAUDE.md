@@ -18,14 +18,14 @@ Client asked to stick to the logo colors: navy #1b3a78 (brand), sky blue #2b78bd
 Do not invent copy. Service pages are built only from the PRD table and the doc's Expertise breakdown.
 
 ## Client decisions (Oliv, Oct 12)
-- Testimonials: company names left out of roles
+- Testimonials: company names left out of roles; list matches the doc Testimonials tab (2 quotes)
 - Calendly: https://calendly.com/badesemowo/20mins_freeconsulting (20-minute session; site copy says 20-minute)
 - Form emails go to b.adesemowo@gmail.com (needs RESEND_API_KEY to actually send)
 - Blog dates left out everywhere (cards, articles, sidebar, sitemap, schema)
 - Domain: https://web.badesemowo.com (default in data/site.ts; do not set NEXT_PUBLIC_SITE_URL to the vercel.app address for the final deploy)
 
 ## Open items before launch
-- Confirm testimonial names are approved and the Leyla/Anas quotes are attributed correctly
+- Confirm testimonial names are approved
 - Set RESEND_API_KEY in Vercel (without it forms only log, nothing is emailed). Default sender onboarding@resend.dev only delivers to the Resend account owner's email; verify a domain to send to others
 - Optional: NEXT_PUBLIC_GA_ID
 - Footer links FAQs and Community from the doc have no pages yet and are left out

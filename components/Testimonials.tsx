@@ -17,10 +17,10 @@ export default function Testimonials({ soft = true }: { soft?: boolean }) {
           <Eyebrow>Testimonials</Eyebrow>
           <h2 className={h2}>Join 500+ clients who found success with me</h2>
         </div>
-        <div className="flex gap-2">
+        {testimonials.length > 3 && <div className="flex gap-2">
           <button type="button" onClick={() => scroll(-1)} aria-label="Previous testimonials" className="grid size-11 place-items-center rounded-full border-2 border-brand text-brand hover:bg-brand hover:text-white">←</button>
           <button type="button" onClick={() => scroll(1)} aria-label="Next testimonials" className="grid size-11 place-items-center rounded-full border-2 border-brand text-brand hover:bg-brand hover:text-white">→</button>
-        </div>
+        </div>}
       </div>
       <div ref={track} role="region" aria-label="Client testimonials" tabIndex={0} className="no-scrollbar -mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2">
         {testimonials.map((t, i) => (

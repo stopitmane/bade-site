@@ -82,9 +82,9 @@ export const services: Service[] = [
   {
     slug: "tech-talent-visa",
     code: "TV",
-    title: "Tech Talent Visa",
-    summary: "Empowering global tech experts to contribute to the UK's thriving technology ecosystem.",
-    detail: "Empowering global tech experts to contribute to the UK's thriving technology ecosystem.",
+    title: "Talent Visa",
+    summary: "Empowering global experts to contribute to a thriving ecosystem.",
+    detail: "Empowering global experts to contribute to a thriving ecosystem.",
     focus: "UK Global Talent Visa coaching.",
     deliverables: ["Relocation pathways", "Visa processing", "Integration support"],
     relatedCategory: "Visa",

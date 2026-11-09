@@ -8,20 +8,12 @@ export default function Footer() {
         <div>
           <h4 className="mb-2 font-bold text-white">{site.name}</h4>
           <p>{site.tagline}</p>
-          <p className="mt-2">{site.hours}. {site.hoursNote}.</p>
         </div>
         <div>
-          <h4 className="mb-2 font-bold text-white">Call us directly</h4>
           <p><a href={site.phoneHref} className="hover:text-white">{site.phone}</a></p>
-          <h4 className="mb-2 mt-4 font-bold text-white">Email</h4>
-          {site.emails.map((e) => (
-            <p key={e}><a href={`mailto:${e}`} className="hover:text-white">{e}</a></p>
-          ))}
         </div>
         <div>
-          <h4 className="mb-2 font-bold text-white">Offices</h4>
           <p>{site.offices}</p>
-          <p className="mt-2">{site.address}</p>
         </div>
         <div>
           <h4 className="mb-2 font-bold text-white">Quick links</h4>
@@ -33,7 +25,7 @@ export default function Footer() {
             <li><a href="/sitemap.xml" className="hover:text-white">Sitemap</a></li>
           </ul>
         </div>
-        <p className="border-t border-[#22386b] pt-4 text-[13px] md:col-span-4">Copyright © 2025 {site.name}. All Rights Reserved.</p>
+        <p className="border-t border-[#22386b] pt-4 text-[13px] md:col-span-4">Copyright © 2026 {site.name}. All Rights Reserved.</p>
       </div>
     </footer>
   );

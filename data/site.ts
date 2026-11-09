@@ -7,7 +7,7 @@ export const site = {
   emails: ["b.adesemowo@gmail.com", "infor@consulte.co"],
   locations: "Lagos, Nigeria | United Kingdom",
   address: "849 Diamond Str, 07th Floor, NY 10012, New York, United States",
-  offices: "Lagos NG | Atlanta GA | Chicago IL | London UK",
+  offices: "Lagos NG | London UK",
   hours: "Mon to Sat, 8:00 to 17:00",
   hoursNote: "Sunday closed",
   calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://calendly.com/badesemowo/20mins_freeconsulting",

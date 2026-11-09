@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const highlights = [
-  { t: "Co-Founder & CTO, Social Lender", d: "Scaled to 200k+ users with successful integration into Pay Dashboard/Experian (£100m deal)." },
+  { t: "Co-Founder & CTO, Social Lender", d: "Fintech using social reputation for financial access." },
   { t: "Partner, Bincom", d: "Leading ICT firm in Nigeria." },
   { t: "UK Global Talent Endorsement", d: "Recognized in Digital Technology." },
   { t: "Award-Winning Innovator", d: "MIT Inclusive Innovation Winner, Gartner Most Innovative Digital Business Model, Efma/Accenture Most Disruptive Technology, Alibaba Foundation Africa's Business Heroes Top 50 Finalist." },
@@ -29,11 +29,11 @@ export default function About() {
 
       <Section>
         <div className="grid items-center gap-8 md:grid-cols-[.8fr_1.2fr] md:gap-14">
-          <Image src="/images/blazer-wall.webp" alt="Bade Adesemowo in a light grey blazer leaning against a wall" width={768} height={1376} loading="lazy" className="max-h-[600px] w-full rounded-[28px] object-cover object-top" />
+          <Image src="/images/blazer-wall.webp" alt="Bade Adesemowo in a light grey blazer leaning against a wall" width={768} height={1376} loading="lazy" className="aspect-[4/5] w-full rounded-[28px] object-cover object-[50%_10%]" />
           <div>
             <Eyebrow>About Bade</Eyebrow>
             <h2 className={`${h2} mb-4`}>About Bade</h2>
-            <p className="max-w-[620px] text-mute">Bade Adesemowo is the Co-Founder and CTO of Social Lender and a Partner at Bincom, a leading ICT firm in Nigeria. He is a thought leader within the African tech ecosystem, championing the responsible and inclusive use of technology to solve real-world challenges.</p>
+            <p className="max-w-[620px] text-mute">Bade Adesemowo is a thought leader within the African tech ecosystem, championing the responsible and inclusive use of technology to solve real-world challenges.</p>
             <blockquote className="my-6 rounded-r-[14px] border-l-4 border-sky bg-soft px-6 py-5 text-lg font-semibold text-brand">“Nothing is impossible, especially in IT!”</blockquote>
             <h3 className="mb-3 font-bold">Key career highlights</h3>
             <ul className="grid gap-3 sm:grid-cols-2">
